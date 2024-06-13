@@ -8,7 +8,7 @@ let chute = prompt('Escolha um número entre 1 e 10');
 
 // se a entrada do usuário for igual ao número a ser adivinhado
 if (numeroSecreto == chute) {
-    alert('Você acertou! (' + numeroSecreto + ')');
+    alert(`Você acertou! (${numeroSecreto})`);
 } else {
     alert('Você errou :(');
 }
