@@ -4,7 +4,7 @@ alert('Boas vindas ao jogo do número secreto!');
 let numeroSecreto = 9;
 console.log(numeroSecreto);
 
-let chute;
+let chute = 1;
 let tentativas = 1;
 
 // enquanto chute for diferente de numeroSecreto
@@ -19,8 +19,10 @@ while (chute != numeroSecreto) {
             alert('O número secreto é maior que ' + chute);
         }
     } else {
-        alert(`Você acertou! (${numeroSecreto}), com ${tentativas} tentativas.`);
+        break;
     }
     // tentativas = tentativas + 1;
     tentativas++;
 }
+
+alert(`Você acertou! (${numeroSecreto}), com ${tentativas} ${tentativas == 1 ? 'tentativa' : 'tentativas'}.`);
