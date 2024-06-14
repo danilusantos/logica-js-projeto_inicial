@@ -7,8 +7,12 @@ console.log(numeroSecreto);
 let chute = prompt('Escolha um número entre 1 e 10');
 
 // se a entrada do usuário for igual ao número a ser adivinhado
-if (numeroSecreto == chute) {
+if (chute == numeroSecreto) {
     alert(`Você acertou! (${numeroSecreto})`);
 } else {
-    alert('Você errou :(');
+    if (chute > numeroSecreto) {
+        alert('O número secreto é menor que ' + chute);
+    } else {
+        alert('O número secreto é maior que ' + chute);
+    }
 }
